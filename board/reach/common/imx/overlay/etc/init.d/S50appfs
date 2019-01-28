@@ -1,0 +1,35 @@
+#!/bin/sh
+#
+# Mount the application filesystem
+#
+
+start() {
+    printf "Mounting the application filesystem: "
+	mount -t ext4 /dev/mmcblk2p3 /custom/
+	echo "OK"
+}
+
+stop() {
+	printf "Unmounting the application filesystem: "
+	umount /custom/
+	sleep 3
+	echo "OK"
+}
+
+case "$1" in
+  start)
+	start
+	;;
+  stop)
+	stop
+	;;
+  restart|reload)
+	stop
+	start
+	;;
+  *)
+	echo "Usage: $0 {start|stop|restart}"
+	exit 1
+esac
+
+exit $?
