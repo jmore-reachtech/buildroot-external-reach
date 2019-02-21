@@ -5,13 +5,13 @@
 
 start() {
     printf "Mounting the application filesystem: "
-	mount -t ext4 /dev/mmcblk2p3 /custom/
+	mount -t ext4 /dev/mmcblk2p3 /data/
 	echo "OK"
 }
 
 stop() {
 	printf "Unmounting the application filesystem: "
-	umount /custom/
+	umount /data/
 	sleep 3
 	echo "OK"
 }
