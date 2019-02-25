@@ -1,0 +1,6 @@
+config BR2_PACKAGE_QML_VIEWER
+        bool "Qml Viewer"
+        help
+            Reach's custom Qml Viewer
+
+            https://github.com/jmore-reachtech/reach-qml-viewer-g3

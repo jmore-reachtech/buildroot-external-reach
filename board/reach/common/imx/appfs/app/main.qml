@@ -2,8 +2,8 @@ import QtQuick 2.8
 import QtMultimedia 5.8
 
 Rectangle {
-    width: 1024
-    height: 768
+    width: 800
+    height: 480
     color: "black"
 
 

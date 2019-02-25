@@ -3,8 +3,8 @@
 # Start Qml Application
 #
 
+QML_APP_BIN="/usr/bin/qml-viewer"
 QML_APP_ARGS="-platform eglfs -plugin tslib"
-QML_APP_PATH="/data/app/main.qml"
 
 source /etc/profile.d/tslib.sh
 source /etc/profile.d/qpa.sh
@@ -17,7 +17,7 @@ start() {
     fi
     
 	printf "Starting Qml Application: "
-	start-stop-daemon -b -S -q -m -p /var/run/qmlapp.pid --exec /usr/bin/qmlscene -- $QML_APP_ARGS $QML_APP_PATH
+	start-stop-daemon -b -S -q -m -p /var/run/qmlapp.pid --exec $QML_APP_BIN -- $QML_APP_ARGS
 	echo "OK"
 }
 

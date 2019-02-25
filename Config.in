@@ -1,0 +1,1 @@
+source "$BR2_EXTERNAL_REACH_PATH/package/qml-viewer/Config.in"
