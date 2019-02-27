@@ -1,0 +1,7 @@
+config BR_PACKAGE_FBLOGO
+    bool "FB Logo Utility"
+    help
+        Custom userspace framebuffer splash utility used to write a 24
+        bit BMP file to the framebuffer.
+
+        https://github.com/jmore-reachtech/reach-fblogo
