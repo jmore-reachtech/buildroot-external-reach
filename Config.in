@@ -4,3 +4,4 @@ config BR2_TARGET_REACH_RELEASE
 
 source "$BR2_EXTERNAL_REACH_PATH/package/qml-viewer/Config.in"
 source "$BR2_EXTERNAL_REACH_PATH/package/fblogo/Config.in"
+source "$BR2_EXTERNAL_REACH_PATH/package/medical-demo/Config.in"

@@ -1,0 +1,6 @@
+config BR2_PACKAGE_MEDICAL_DEMO
+    bool "Medical Demo"
+    help
+        Reach's custom Medical Qml Demo
+
+        https://github.com/jmore-reachtech/reach-qml-medical

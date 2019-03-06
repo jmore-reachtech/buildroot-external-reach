@@ -1,4 +1,4 @@
-config BR_PACKAGE_FBLOGO
+config BR2_PACKAGE_FBLOGO
     bool "FB Logo Utility"
     help
         Custom userspace framebuffer splash utility used to write a 24

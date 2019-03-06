@@ -10,7 +10,7 @@ rm -rf "${GENIMAGE_TMP}"
 rm -rf "${APPIMAGE_TMP}"
 
 genimage                           \
-	--rootpath "${BOARD_DIR}/appfs"     \
+	--rootpath "${TARGET_DIR}/data"     \
 	--tmppath "${APPIMAGE_TMP}"    \
 	--inputpath "${BINARIES_DIR}"  \
 	--outputpath "${BINARIES_DIR}" \

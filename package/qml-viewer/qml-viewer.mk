@@ -1,4 +1,4 @@
-QML_VIEWER_VERSION = 80cce2fb737420a22711d4f345540903332d3f87
+QML_VIEWER_VERSION = fb9f726a1e0040fb391821675c38adbc053dc88b
 QML_VIEWER_LICENSE = GPL-3.0+
 QML_VIEWER_SITE = https://github.com/jmore-reachtech/reach-qml-viewer-g3.git
 QML_VIEWER_SITE_METHOD = git
@@ -14,6 +14,8 @@ endef
 
 define QML_VIEWER_INSTALL_TARGET_CMDS
 	$(INSTALL) -D -m 0755 $(@D)/qml-viewer $(TARGET_DIR)/usr/bin
+	$(INSTALL) -D -m 0755 $(@D)/settings.conf.example $(TARGET_DIR)/data/app/settings.conf
+	$(INSTALL) -D -m 0755 $(@D)/translate.conf.example $(TARGET_DIR)/data/app/translate.conf
 endef
 
 $(eval $(generic-package))
