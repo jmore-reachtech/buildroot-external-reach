@@ -6,7 +6,7 @@ FBLOGO_CONF_OPTS = --prefix=/usr
 FBLOGO_AUTORECONF = yes
 
 define FBLOGO_PRE_CONFIGURE_AUTOGEN
-	(cd $(@D); ./autogen.sh)
+	cd $(@D) && PATH=$(BR_PATH) ./autogen.sh
 endef
 
 FBLOGO_PRE_CONFIGURE_HOOKS += FBLOGO_PRE_CONFIGURE_AUTOGEN
